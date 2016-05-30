@@ -1,0 +1,327 @@
+hec[,,1]
+male <- hec[,,1]
+male
+is.matrix(male)
+iris
+help(iris)
+iris$Sepal.Length
+x1 <- iris$Sepal.Length
+x2 <- iris$Sepal.Wigth
+x3 <- iris$Petal.Length
+x4 <- iris$Petal.Width
+liblary(caret)
+library(caret)
+install.packages("caret")
+library(caret)
+tmp <- dummyVars(~., data=iris)
+iris.y <- as.data.frame(predict(tmp, iris))
+iris
+iris.dummy <- as.data.frame(predict(tmp, iris))
+iris.dummy
+save(iris, file = "myiris.RData")
+summary(iris)
+summary(iris.dummy)
+save(iris.dummy, file = "econ_iris.RData")
+x1
+y
+cor(x1,x2)
+cor(iris$x1 ,iris$x2)
+result1 <- lm(x1~ x2)
+result1 <- lm(iris$x1 ~ iris$x2)
+result1 <- lm(iris$Sepal.Length ~ iris$Sepal.Width)
+summary(result1)
+result2 <- lm(iris$Sepal.Length ~ iris$Petal.Length)
+summary(result2)
+result3 <- lm(iris$Sepal.Length ~ iris$Petal.Width)
+summary(result3)
+result3 <- lm(iris$Sepal.Width ~ iris$Petal.Length)
+result4 <- lm(iris$Sepal.Width ~ iris$Petal.Length)
+summary(result4)
+result5 <- lm(iris$Sepal.Width ~ iris$Petal.Width)
+summary(result5)
+result6 <- lm(iris$Petal.Length ~ iris$Petal.Width)
+summary(result6)
+cars
+help(cars)
+esoph
+Titanic
+women
+LifeCycleSaving
+LifeCycleSavings
+x<- LifeCycleSavings
+y <- x$sr / x$dpi
+y
+x4y
+x$y
+sr
+x$sr
+rate = x$sr / x$dpi
+x$rate
+rate
+x <- transform(x, rate)
+x$rate
+x
+x <- transform(x, rate = sr / dpi)
+x
+result1 <- lm(x$rate ~ x$pop15 x$pop75 x$dpi x$ ddpi)
+result1 <- lm(x$rate ~ x$pop15 x$pop75 x$dpi x$ddpi)
+result1 <- lm(x$rate ~ x$pop15 +x$pop75 +x$dpi +x$ddpi)
+summary(result1)
+result2 <- lm(x$rate ~ x$pop15 +x$pop75 +x$ddpi)
+summary(result2)
+result3 <- lm(log(x$rate) ~ x$pop15 +x$pop75 +x$ddpi)
+summary(result3)
+x
+result4 <- lm(log(x$rate) ~ x$pop75 +x$ddpi)
+summary(result4)
+sample(x, )                  sr pop15 pop75     dpi  ddpi         rate#
+Australia      11.43 29.35  2.87 2329.68  2.87 0.0049062532#
+Austria        12.07 23.32  4.41 1507.99  3.93 0.0080040319#
+Belgium        13.17 23.80  4.43 2108.47  3.82 0.0062462354#
+Bolivia         5.75 41.89  1.67  189.13  0.22 0.0304023687#
+Brazil         12.88 42.19  0.83  728.47  4.56 0.0176808928#
+Canada          8.79 31.72  2.85 2982.88  2.43 0.0029468165#
+Chile           0.60 39.74  1.34  662.86  2.67 0.0009051685#
+China          11.90 44.75  0.67  289.52  6.51 0.0411025145#
+Colombia        4.98 46.64  1.06  276.65  3.08 0.0180010844#
+Costa Rica     10.78 47.64  1.14  471.24  2.80 0.0228758170#
+Denmark        16.85 24.42  3.93 2496.53  3.99 0.0067493681#
+Ecuador         3.59 46.31  1.19  287.77  2.19 0.0124752406#
+Finland        11.24 27.84  2.37 1681.25  4.32 0.0066855019#
+France         12.64 25.06  4.70 2213.82  4.52 0.0057095880#
+Germany        12.55 23.31  3.35 2457.12  3.44 0.0051076057#
+Greece         10.67 25.62  3.10  870.85  6.28 0.0122523971#
+Guatamala       3.01 46.05  0.87  289.71  1.48 0.0103897000#
+Honduras        7.70 47.32  0.58  232.44  3.19 0.0331268284#
+Iceland         1.27 34.03  3.08 1900.10  1.12 0.0006683859#
+India           9.00 41.31  0.96   88.94  1.54 0.1011918147#
+Ireland        11.34 31.16  4.19 1139.95  2.99 0.0099478047#
+Italy          14.28 24.52  3.48 1390.00  3.54 0.0102733813#
+Japan          21.10 27.01  1.91 1257.28  8.21 0.0167822601#
+Korea           3.98 41.74  0.91  207.68  5.81 0.0191640986#
+Luxembourg     10.35 21.80  3.73 2449.39  1.57 0.0042255419#
+Malta          15.48 32.54  2.47  601.05  8.12 0.0257549289#
+Norway         10.25 25.95  3.67 2231.03  3.62 0.0045942905#
+Netherlands    14.65 24.71  3.25 1740.70  7.66 0.0084161544#
+New Zealand    10.67 32.61  3.17 1487.52  1.76 0.0071730128#
+Nicaragua       7.30 45.04  1.21  325.54  2.48 0.0224242797#
+Panama          4.44 43.56  1.20  568.56  3.61 0.0078092022#
+Paraguay        2.02 41.18  1.05  220.56  1.03 0.0091585056#
+Peru           12.70 44.19  1.28  400.06  0.67 0.0317452382#
+Philippines    12.78 46.26  1.12  152.01  2.00 0.0840734162#
+Portugal       12.49 28.96  2.85  579.51  7.48 0.0215526911#
+South Africa   11.14 31.94  2.28  651.11  2.19 0.0171092442#
+South Rhodesia 13.30 31.92  1.52  250.96  2.00 0.0529964935#
+Spain          11.77 27.74  2.87  768.79  4.35 0.0153097725#
+Sweden          6.86 21.44  4.54 3299.49  3.01 0.0020791092#
+Switzerland    14.13 23.49  3.73 2630.96  2.70 0.0053706632#
+Turkey          5.13 43.42  1.08  389.66  2.96 0.0131653236#
+Tunisia         2.81 46.12  1.21  249.87  1.13 0.0112458478#
+United Kingdom  7.81 23.27  4.46 1813.93  2.01 0.0043055686#
+United States   7.56 29.81  3.43 4001.89  2.45 0.0018891074#
+Venezuela       9.22 46.40  0.90  813.39  0.53 0.0113352758#
+Zambia         18.56 45.25  0.56  138.33  5.14 0.1341719078#
+Jamaica         7.72 41.12  1.73  380.47 10.23 0.0202906931#
+Uruguay         9.24 28.13  2.72  766.54  1.88 0.0120541655#
+Libya           8.89 43.69  2.07  123.58 16.71 0.0719372067#
+Malaysia        4.71 47.20  0.66  242.69  5.08 0.0194074746
+z <- 1:50for ( i in z) w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”]p <- append(co_pop75)
+z <- 1:50for ( i in z){ w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”]p <- append(co_pop75)}
+z <- 1:50for ( i in z){w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”]p <- append(co_pop75)}
+z <- 1:50for ( i in z){w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”]}p <- append(co_pop75)
+z <- 1:50for ( i in z){w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”]}
+z <- 1:50for ( i in z){w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”] q = c(co_pop75)p <- append(q)}
+for ( i in z){w <- sample(x, 20, replace = TRUE) result <- lm(log(w$rate) ~ w$pop75 +w$ddpi) co_pop75 <- result$coefficients[“pop75”] q = c(co_pop75)p <- append(q)}
+for ( i in z){w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”] q <- c(co_pop75)p <- append(q)}
+w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“pop75”] q <- c(co_pop75)
+w <- sample(x, 20, replace = TRUE)result <- lm(log(w$rate) ~ w$pop75 +w$ddpi)co_pop75 <- result$coefficients[“w$pop75”] q <- c(co_pop75)
+result4$coefficients["pop75"]
+result4$coefficients["x$pop75"]
+w <- sample(x, 20, replace = TRUE)
+w
+w <- sample(x, 3, replace = TRUE)
+w
+data[sample(nrow(x), 3),]
+data(x)
+model(x)
+is.matrix(x)
+is.dataframe(x)
+x[2]
+x[c(2)]
+x[c(2),]
+x[2,]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]
+x_sample
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi)sample_pop <- result$coefficients[“x_sample$pop75”]q <- c(sample_pop)p <- append(q)}p
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),] result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[“x_sample$pop75”] q <- c(sample_pop) p <- append(q)}
+pop <- result4$coefficients["pop75"]
+pop
+pop <- result4$coefficients["result4$pop75"]
+pop
+pop1 <- result4$coefficients["result4$pop75"]
+pop1
+result4
+pop1 <- result4$coefficients["x$pop75"]
+pop1
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi)
+result
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[“x_sample$pop75”]
+sample_pop
+result
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) result$coefficients[“x_sample$pop75”]
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients["x_sample$pop75"] q <- c(sample_pop) p <- append(q)}p
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients["x_sample$pop75"]
+sample_pop
+q <- sample_pop
+q
+q <- c(sample_pop)
+q
+r <- 2
+r
+t <- c(r)
+t
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[2,"x_sample$pop75"]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[1,"x_sample$pop75"]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[0,"x_sample$pop75"]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients[,"x_sample$pop75"]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- result$coefficients
+sample_pop
+sample_pop[2,]
+sampl_pop[,2]
+sample_pop[,2]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) d <- summary(result)
+d
+d$coef
+d$coef["x_sample$pop75"]
+coef(result)
+coef
+x <- 1:5; coef(lm(c(1:3, 7, 6) ~ x))
+coef(result)["x_sample$pop75"]
+d[2,1]
+d[,2,1]
+coef(d)["x_sample$pop75","Estimate"]
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75","Estimate"]  p <- append(sample_pop)}p
+x
+x <- LifeCycleSavings
+x <- transform(x, rate = sr / dpi)
+x
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p <- append(sample_pop)}p
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))[x_sample$pop75, Estimate]
+x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"]
+sample_pop
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))[x_sample$pop75, Estimate] p = c(p, sample_pop)}p
+for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}p
+e<-numeric()　for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] e = c(e, sample_pop)}e
+p <- numeric()for (i in 1:30){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}p
+hist(p, col= "orange", main = "random_sampling_pop75")
+hist(p, col= "orange", main = "random_sampling_pop75", breaks = "Scott")
+for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10)
+rate
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))[x_sample$pop75, Estimate] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 0), ylim=c(0,50))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 0), ylim=c(0,50))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 0), ylim=c(0,30))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(0, 1), ylim=c(0,30))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(0, 0.8), ylim=c(0,30))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(0, 0.6), ylim=c(0,30))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,30))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,35))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,40))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,40))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,400))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 10, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,600))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 20, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,600))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,600))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:1000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,300))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,3000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 0.4), ylim=c(0,4000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 30, xlab = "estimated_pop75", xlim= c(-1.0, 0.3), ylim=c(0,4000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_pop75", breaks = 30, xlab = "estimated_pop75", xlim= c(-1.0, 0.3), ylim=c(0,2000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 1.0), ylim=c(0,2000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 1.0), ylim=c(0,3000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Estimate"] p = c(p, sample_pop)}hist(p, col= "orange", main = "random_sampling_ddpi", breaks = 30, xlab = "estimated_ddpi", xlim= c(-0.3, 1.0), ylim=c(0,4000))
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:100){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- lm(log(x_sample$rate) ~ x_sample$pop75 +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$pop75", "Estimate"] p = c(p, sample_pop)}
+p
+library(MASS)
+x <- LifeCycleSavings
+result <- rlm(x$sr ~ x$dpi + x$pop75)
+summary(result)
+x <- LifeCycleSavingsx <- transform(x, rate = sr / dpi)p <- numeric()for (i in 1:10000){x_sample <- x[sample(1:nrow(x), 20, replace=TRUE),]result <- rlm(log(x_sample$rate) ~ x_sample$ddpi +x_sample$ddpi) sample_pop <- coef(summary(result))["x_sample$ddpi", "Value"] p = c(p, sample_pop)}
+warnings()
+hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 0.2), ylim=c(0,2000))
+hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 1.0), ylim=c(0,4000))
+hist(p, col= "orange", main = "random_sampling_pop75", breaks = 10, xlab = "estimated_pop75", xlim= c(-1.0, 1.0), ylim=c(0,5000))
+example(discoveries)
+discoveries
+dis <- discoveries
+class(dis)
+plot(dis)
+plot(diff(dis))
+acf(dis)
+for(i in 1:4)plot(diff(dis),lag = i)
+par(mai = rep(0.2,4),mfrow = c(4,1)) for(i in 1:4)plot(diff(dis),lag = i)
+rm
+clear
+Nile
+plot(Nile)
+install(forecast)
+install.packages("forecast", )
+x1 <- arima.sim(n = 200, list(ar = 0.5))
+plot(x1)
+x2 <- arima.sim(n = 200, list(ar = -0.5))
+plot(x2)
+x3 <- arima.sim(n = 200, list(order = c(1,1,1), ar = 0.5, ma = 0.5))
+plot(x3)
+x4 <- arima.sim(n = 200, list(order = c(1,1,1), ar = 0.5, ma = -0.5))
+plot(x4)
+x5 <- arima.sim(n = 200, list(order = c(1,1,1), ar = -0.5, ma = 0.5))
+plot(x5)
+x6 <- arima.sim(n = 200, list(order = c(1,1,1), ar = -0.5, ma = -0.5))
+plot(x6)
+par(mfrow = c(3,2))#
+plot(x1)#
+plot(x2)#
+plot(x3)#
+plot(x4)#
+plot(x5)#
+plot(x6)
+par(mfrow = c(3,2))#
+plot(x1, main = “AR(1) ar = 0.5”)#
+plot(x2)#
+plot(x3)#
+plot(x4)#
+plot(x5)#
+plot(x6)
+par(mfrow = c(3,2))#
+plot(x1, main = “AR(1) coef = 0.5”)#
+plot(x2, main = “MA(1) coef = -0.5”)#
+plot(x3, main = “ARIMA(1,1,1) arcoef = 0.5,macoef = 0.5”)#
+plot(x4, main = “ARIMA(1,1,1) arcoef = 0.5,macoef = -0.5”)#
+plot(x5, main = “ARIMA(1,1,1) arcoef = -0.5,macoef = 0.5”)#
+plot(x6, main = “ARIMA(1,1,1) arcoef = -0.5,macoef = -0.5”)
+library(MASS)#
+bike <- read.csv('bike_data.csv', header = TRUE)#
+names <- bike$X#
+bike_data <- bike[c(2,3,4,5,6,7,8,9,10,11,12)]#
+dist_bike <- dist(bike_data)#
+bike_cmd <- cmdscale(dist_bike)#
+plot(bike_cmd, pch = 1, type = "n", xlab = "次元1", ylab = "次元2")#
+text(bike_cmd, labels = names)#
+abline(v = 0)#
+abline(h = 0)
+data <- read.txt("mydata.txt")
+data <- read.table("mydata.txt")
+data
+data <- read.table("mydata.txt", header = T)
+pika <- data[x1]
+pika <- data["x1"]
+todai <- data["x3"]
+result <- lm(pika ~ todai)
+head(pika)
+head(todai)
+lm(pika ~ todai)
+pika <- as.list(pika)
+todai <- as.list(todai)
+lm(pika ~ todai)
+lm(x1 ~ x3, data = data)
+summary(lm(x1 ~ x3, data = data))
